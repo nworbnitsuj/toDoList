@@ -7,3 +7,7 @@
         $('input[name=ListItem]').val("");
       })
   )
+
+  $(document).on('dblclick','li', function(){
+         $(this).toggleClass('strike').fadeOut('slow');
+       });
