@@ -3,34 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title>My Todo List</title>
-    <!-- Don't forget to link your .js file -->
-    <!-- Don't forget to link your .css file -->
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
 
 		<h1>Sort Yourself Out, Bucko</h1>
 
+    <form name="toDoList">
+  			<input type="text" name="ListItem"/>
+  	</form>
+    <button id="btn" type="submit" form="toDoList" value="Submit">Submit</button>
 
-      <!-- This is a where you could add a <form>
-      that accepts in <input> field,
-      don't forget to add a submit button to your form  -->
-      <form>
-        Tasks:<br>
-        <input type="text" name="tasks"><br>
-         <input type="button" name="input" value="submit">
-      </form>
+  	<ol></ol>
 
 
-    <!-- You also need a place to append your jQuery logic to the DOM (your list).
-    Perhaps you could try using tags such as <ol> or <ul> -->
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
-
-  <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 	</body>
 </html>
